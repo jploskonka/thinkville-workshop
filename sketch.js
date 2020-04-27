@@ -2,9 +2,11 @@ let redSlider,
   greenSlider,
   blueSlider;
 
+let paintingHeight,
+  paintingWidth;
+
 const TEXT_SIZE = 16;
-const PAINTING_HEIGHT = 500;
-const PAINTING_WIDTH = 500;
+
 
 const sliderWithLabel = (label, x, y) => {
   text(label, x, y);
@@ -15,14 +17,20 @@ const sliderWithLabel = (label, x, y) => {
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
+  paintingWidth = windowWidth - 20;
+  paintingHeight = 600;
+
   textSize(TEXT_SIZE);
 
-  redSlider   = sliderWithLabel("red", 30, PAINTING_HEIGHT + 50);
-  greenSlider = sliderWithLabel("green", 30, PAINTING_HEIGHT + 100);
-  blueSlider  = sliderWithLabel("blue", 30, PAINTING_HEIGHT + 150);
+  redSlider   = sliderWithLabel("red", 30, paintingHeight + 50);
+  greenSlider = sliderWithLabel("green", 30, paintingHeight + 100);
+  blueSlider  = sliderWithLabel("blue", 30, paintingHeight + 150);
 }
 
 function draw() {
+  fill(250, 250, 250);
+  rect(0, 0, paintingWidth, paintingHeight);
+
   const red = redSlider.value();
   const green = greenSlider.value();
   const blue = blueSlider.value();
