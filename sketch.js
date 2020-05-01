@@ -16,9 +16,11 @@ const sliderWithLabel = (label, x, y) => {
 }
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
   paintingWidth = windowWidth - 20;
   paintingHeight = 600;
+
+  let canvas = createCanvas(windowWidth, paintingHeight);
+  canvas.parent('header');
 
   textSize(TEXT_SIZE);
 
