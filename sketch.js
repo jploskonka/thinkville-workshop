@@ -17,6 +17,7 @@ function setup() {
   blue = random(0, 255);
 
   count = random(5, 30);
+  noLoop();
 }
 
 function draw() {

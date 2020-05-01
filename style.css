@@ -1,5 +1,23 @@
+header {
+  font-family: "Righteous";
+  height: 50vh;
+  position: relative;
+}
+
+.headline {
+  line-height: 8vh;
+  font-size: 6vh;
+  margin-top: 10vh;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+
 .typeform-widget__container {
-  margin: -40vh 5vw 0;
+  margin: -15vh 5vw 0;
   height: 80vh;
 }
 
