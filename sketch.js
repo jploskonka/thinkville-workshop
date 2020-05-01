@@ -21,6 +21,8 @@ function setup() {
 
 function draw() {
   fill(red, green, blue);
+  noStroke();
+
   for(let i = 0; i <= count + 1; i++) {
     for(let j = 0; j <= count + 1; j++) {
       const ellipseWidth = paintingWidth/count;
