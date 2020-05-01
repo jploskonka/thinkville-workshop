@@ -5,14 +5,16 @@ header {
 }
 
 .headline {
-  line-height: 8vh;
-  font-size: 6vh;
+  line-height: 10vh;
+  font-size: 9vh;
   margin-top: 10vh;
   position: absolute;
   z-index: 1;
   left: 0;
   right: 0;
   text-align: center;
+  color: yellow;
+  text-shadow: 5px 5px red, -5px -5px #000, 3px -3px lime;
 }
 
 
