@@ -16,7 +16,7 @@ const sliderWithLabel = (label, x, y) => {
 }
 
 function setup() {
-  paintingWidth = windowWidth - 20;
+  paintingWidth = windowWidth;
   paintingHeight = 600;
 
   let canvas = createCanvas(windowWidth, paintingHeight);
