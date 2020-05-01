@@ -7,7 +7,7 @@ let red, green, blue, count;
 
 function setup() {
   paintingWidth = windowWidth;
-  paintingHeight = 600;
+  paintingHeight = windowHeight/2;
 
   let canvas = createCanvas(windowWidth, paintingHeight);
   canvas.parent('header');
