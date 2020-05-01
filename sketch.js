@@ -31,9 +31,6 @@ function setup() {
 }
 
 function draw() {
-  fill(250, 250, 250);
-  rect(0, 0, paintingWidth, paintingHeight);
-
   const red = redSlider.value();
   const green = greenSlider.value();
   const blue = blueSlider.value();
